@@ -1,5 +1,3 @@
-import 'dart:ui';
-
 class Sneaker{
   final String Name_of_Product;
   final List<String> Product_image;

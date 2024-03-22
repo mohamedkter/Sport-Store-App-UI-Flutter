@@ -43,7 +43,8 @@ class HomeScreen extends StatelessWidget {
               SizedBox(
                 height: 10,
               ),
-             TshirtSlider()
+             TshirtSlider(),
+             SizedBox(height: 15,)
             ],
           ),
         ),

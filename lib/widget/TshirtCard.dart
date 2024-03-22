@@ -1,4 +1,4 @@
-import 'package:adidas_store/Screens/ProductDetails.dart';
+import 'package:adidas_store/Screens/TshirtDetails.dart';
 import 'package:adidas_store/models/Tshirt.dart';
 import 'package:adidas_store/widget/Custom_Text.dart';
 import 'package:flutter/material.dart';
@@ -22,7 +22,7 @@ bool is_favorite=false;
     return Padding(
       padding: const EdgeInsets.only(left: 10, right: 10),
       child: InkWell(
-        onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (context)=> ProductDetails(tshirt:widget.tshirt,))),
+        onTap: ()=>Navigator.of(context).push(MaterialPageRoute(builder: (context)=> TshirtDetails(tshirt:widget.tshirt,))),
         child: Container(
           width: MediaQuery.sizeOf(context).width - 40,
           decoration: BoxDecoration(

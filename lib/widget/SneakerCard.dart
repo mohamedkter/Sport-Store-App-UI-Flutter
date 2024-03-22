@@ -1,17 +1,17 @@
 import 'package:adidas_store/widget/Custom_Text.dart';
 import 'package:flutter/material.dart';
 
-class ProductCard extends StatefulWidget {
+class SneakerCard extends StatefulWidget {
 
-  const ProductCard({
+  const SneakerCard({
     super.key,
   });
 
   @override
-  State<ProductCard> createState() => _ProductCardState();
+  State<SneakerCard> createState() => _ProductCardState();
 }
 
-class _ProductCardState extends State<ProductCard> {
+class _ProductCardState extends State<SneakerCard> {
   bool is_clicked=false;
 
   @override
@@ -30,7 +30,7 @@ class _ProductCardState extends State<ProductCard> {
         child: Column(
           children: [
             Image.asset(
-              "assets/images/1.1.png",
+              "assets/images/sneakers/1.1.png",
               width: 200,
               height: 100,
               fit: BoxFit.cover,
@@ -73,7 +73,7 @@ class _ProductCardState extends State<ProductCard> {
                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                 children: [
                   Custom_Text(
-                      text: "276",
+                      text: '\$234',
                       fontsize: 18,
                       fontWeight: FontWeight.w600,
                       color: Colors.black),

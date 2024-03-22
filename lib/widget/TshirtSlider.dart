@@ -1,8 +1,10 @@
-import 'package:adidas_store/widget/ProductCard.dart';
+import 'package:adidas_store/Data/ProductData.dart';
+import 'package:adidas_store/widget/TshirtCard.dart';
 import 'package:flutter/material.dart';
 
-class ProductSlider extends StatelessWidget {
-  const ProductSlider({
+class TshirtSlider extends StatelessWidget {
+  
+  const TshirtSlider({
     super.key,
   });
 
@@ -13,13 +15,13 @@ class ProductSlider extends StatelessWidget {
       child: Row(
         children: [
           SizedBox(
-            height: 220,
+            height: 310,
             child: ListView.builder(
               shrinkWrap: true,
-              itemBuilder: (context, index) => ProductCard(),
-              itemCount: 10,
+              itemBuilder: (context, i) => TshirtCard(tshirt: Tshirts[i],),
+              itemCount: Tshirts.length,
               scrollDirection: Axis.horizontal,
-              physics: NeverScrollableScrollPhysics(),
+              physics: const NeverScrollableScrollPhysics(),
             ),
           ),
         ],
@@ -27,6 +29,3 @@ class ProductSlider extends StatelessWidget {
     );
   }
 }
-
-
-
